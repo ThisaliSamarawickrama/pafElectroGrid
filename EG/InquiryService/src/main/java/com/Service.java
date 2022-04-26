@@ -31,7 +31,7 @@ public String insertItem(@FormParam("itemCode") String itemCode,
  @FormParam("date") String date)
 {
  String output = itemObj.insertItem(topic,description,date);
-
+return output;
 }
 
 @PUT
