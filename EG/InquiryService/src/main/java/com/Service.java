@@ -62,8 +62,7 @@ public String deleteItem(String itemData)
  Document doc = Jsoup.parse(itemData, "", Parser.xmlParser());
 
 //Read the value from the element <itemID>
- String notificationID = doc.select("notificationID").text();
- String output = itemObj.deleteItem(notificationID);
+ 
 return output;
 }
 
